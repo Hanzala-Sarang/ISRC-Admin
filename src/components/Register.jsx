@@ -55,6 +55,15 @@ const Register = () => {
           Register
         </Button>
       </form>
+      <Button
+        variant="text"
+        color="primary"
+        fullWidth
+        onClick={() => navigate("/login")}
+        style={{ marginTop: "10px" }}
+      >
+        Already have an account? Login
+      </Button>
     </Container>
   );
 };
