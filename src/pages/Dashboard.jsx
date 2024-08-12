@@ -6,6 +6,7 @@ import ViewAllTeams from "../components/ViewAllTeams";
 import { useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import InternationAddCampusAmbassador from "../components/InternationalAddCampusAmbassador";
+import ViewAllCampusAmbassadorIndia from "../components/ViewAllCampusAmbassadorIndia";
 
 const Dashboard = () => {
   const { token } = useAuth();
@@ -34,6 +35,10 @@ const Dashboard = () => {
           <Route
             path="add-international-campus-ambassador"
             element={<InternationAddCampusAmbassador />}
+          />
+          <Route
+            path="all-campus-ambassador"
+            element={<ViewAllCampusAmbassadorIndia />}
           />
           <Route path="view-all-teams" element={<ViewAllTeams />} />
         </Routes>

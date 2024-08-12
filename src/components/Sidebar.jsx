@@ -29,6 +29,9 @@ const Sidebar = () => {
         >
           <ListItemText primary="Add International Campus Ambassador" />
         </ListItem>
+        <ListItem button component={Link} to="all-campus-ambassador">
+          <ListItemText primary="View All Campus Ambassador" />
+        </ListItem>
         <ListItem button component={Link} to="view-all-teams">
           <ListItemText primary="View All Teams" />
         </ListItem>
